@@ -7,14 +7,16 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] int maxHP = 5;
     int currentHP = 0;
 
-    void Start()
+    Enemy enemy;
+
+    void OnEnable()
     {
         currentHP = maxHP;
     }
 
-    void Update()
+    void Start()
     {
-        
+        enemy = GetComponent<Enemy>();
     }
 
     private void OnParticleCollision(GameObject other)
@@ -34,6 +36,7 @@ public class EnemyHealth : MonoBehaviour
 
     void KillEnemy()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        enemy.RewardGold();
     }
 }
