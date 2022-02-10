@@ -141,15 +141,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ee87b65ab0151c4cb9dc0348a02aef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  enemySpeed: 1
+  path: []
+  enemySpeed: 0.5
 --- !u!114 &8515297932248264034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,7 +155,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7f6cd585b5eb214084b62e4f140d433, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 2
+  maxHP: 3
+  difficultyRamp: 5
 --- !u!114 &-4870220605502317712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,3 +169,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48acb178577fdaf44aa41ada7ce4525d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goldReward: 25
+  goldPenalty: 25

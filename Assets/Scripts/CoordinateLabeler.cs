@@ -4,10 +4,12 @@ using UnityEngine;
 using TMPro;
 
 [ExecuteAlways]
+[RequireComponent(typeof(TextMeshPro))]
 public class CoordinateLabeler : MonoBehaviour
 {
     [SerializeField] Color occupiedColor = Color.red;
     [SerializeField] Color availableColor = Color.white;
+    
     TextMeshPro label;
     Waypoint waypoint;
     Vector2Int coordinates = new Vector2Int();
@@ -27,6 +29,7 @@ public class CoordinateLabeler : MonoBehaviour
         {
             DisplayCoordinates();
             UpdateObjectName();
+            label.enabled = true;
         }
 
         UpdateTextColor();

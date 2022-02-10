@@ -115,7 +115,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 1.5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -168,7 +168,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 50
+      scalar: 60
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -865,7 +865,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.75
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4852,7 +4852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   towerWeapon: {fileID: 3144582324300694500}
   rotationSpeed: 10
-  range: 15
+  range: 25
   projectileParticles: {fileID: 2236655456248605129}
 --- !u!114 &-122102101189213644
 MonoBehaviour:
@@ -4866,6 +4866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b3aeaad3474207478654718ff8232ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 75
 --- !u!1 &6131056645070147807
 GameObject:
   m_ObjectHideFlags: 0

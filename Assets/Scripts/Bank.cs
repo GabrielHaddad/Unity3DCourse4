@@ -33,7 +33,6 @@ public class Bank : MonoBehaviour
         {
             //Lose the game
             StartCoroutine(ReloadScene());
-            
         }
     }
 
